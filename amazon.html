@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+ 
+<meta charset="UTF-8">
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+<title>SS Trading and Manufacturing</title>
+   
+ <link rel="stylesheet" href="amazon.css">
+
+</head>
+
+<body>
+   
+<header class="header">
+    
+
+<a href="index.html" class="logo">
+        
+<img src="file:///C:/Users/Acer/Downloads/IMG_20241224_195314.png.jpg" alt="SS Trading & Manufacturing Logo">
+    </a>
+    
+
+<div class="search-container">
+    
+<form action="#" method="get" class="search-form" onsubmit="searchProducts(event)">
+        
+<input type="text" id="search-input" class="search-bar" placeholder="Search">
+        
+<button type="submit" class="search-button">Search</button>
+    </form>
+</div> 
+ <nav class="nav">
+           
+ <ul>
+               
+ <li><a href="#" id="home-button" class="home-link">Home</a></li>
+              
+  <li><a href="#products">Products</a></li>
+               
+ <li><a href="#contact">Contact Us</a></li>
+             
+ <li><a href="#about">About Us</a></li>
+  </ul>
+  
+</nav>
+  
+   
+   
+
+
+
+ </header>  
+ <main>
+       
+ <section class="hero">
+           
+ <div>
+                
+<h1>Welcome to SS Trading & Manufacturing</h1>
+                
+<p>Explore our range of high-performance products!</p>
+  </div>
+   </section>
+
+ 
+</div>
+
+<section id="products" class="products">
+    
+<h2> Products</h2>
+   
+ <div class="product-grid" id="product-grid">
+       
+ <!-- Products with data-name attributes for search functionality -->
+        
+<div class="product" data-name="EPDM/TFM Diaphragm">
+            
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt-eSqZcad5X_UiXlb96kXcLcg1SRTcgbOpA&s" alt="EPDM/TFM Diaphragm">
+            
+<h3>EPDM/TFM Diaphragm</h3>
+          
+<p>High-performance diaphragms designed for frequent steam cycles, compliant with FDA and USP Class VI standards.</p>
+ </div>
+       
+<div class="product" data-name="White PTFE EPDM Rubber Diaphragm">
+            
+<img src="https://5.imimg.com/data5/SELLER/Default/2021/4/LK/PS/GG/2423226/ptfe-epdm-rubber-diaphragm.jpeg" alt="White PTFE EPDM Rubber Diaphragm">
+       <h3>White PTFE EPDM Rubber Diaphragm</h3>
+            
+<p>Valve applications suitable for steam where contamination is not acceptable.</p>
+</div>
+       
+<div class="product" data-name="1-inch (DN 25) EPDM Diaphragm">
+           
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC8KKuPwkbZ1iYPw_da66NhdxPC7TZzVcKBA&s" alt="1-inch EPDM Diaphragm">
+           
+<h3>1-inch (DN 25) EPDM Diaphragm</h3>
+           
+<p>ITT-Style diaphragm, offering durability and reliability, FDA compliant.</p>
+</div>
+       
+<div class="product" data-name="PTFE/EPDM Diaphragm">
+           
+<img src="https://img.directindustry.com/images_di/photo-mg/5758-17078257.webp" alt="PTFE/EPDM Diaphragm">
+           
+<h3>PTFE/EPDM Diaphragm</h3>
+            
+<p>Optimized for chemical resistance and lower wear under steam conditions.</p>
+</div>
+  
+<div class="product" data-name="Round White Silicon TC Gasket">
+          
+<img src="https://5.imimg.com/data5/SELLER/Default/2023/3/294603415/KC/XM/NS/119543354/white-silicon-tc-gasket-500x500.jpg" alt="Round White Silicon TC Gasket">
+           
+<h3>Round White Silicon TC Gasket</h3>
+            
+<p>A glossy white silicone gasket measuring 3 inches in diameter, with a hardness of 30 HRC.</p>
+ </div>
+       
+<div class="product" data-name="White Round TC Gasket Silicone">
+            
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb4doFa37XucsLLsEhE1ddsjuqNjVoRhs24w&s" alt="White Round TC Gasket Silicone">
+            <h3>White Round TC Gasket Silicone</h3>
+           
+ <p>Suitable for steam applications; available in various sizes.</p>
+</div>
+       
+ <div class="product" data-name="Standard Size TC Gaskets">
+            
+<img src="https://img1.exportersindia.com/product_images/bc-full/dir_123/3680562/standard-size-tc-gaskets-with-collar-without-2249052.jpeg" alt="Standard Size TC Gaskets">
+           
+<h3>Standard Size TC Gaskets</h3>
+            
+<p>Mechanical gaskets shaped like a torus, suitable for various sealing applications.</p>
+ </div>
+        
+<div class="product" data-name="Silicon Door Gasket">
+            
+<img src="https://5.imimg.com/data5/SELLER/Default/2022/12/BA/WG/HG/364283/silicone-autoclave-gasket-250x250.jpg" alt="Silicon Door Gasket">
+           
+<h3>Silicon Door Gasket</h3>
+           
+<p>A silicon gasket designed for airtight autoclave door sealing.</p>
+ </div>
+    
+</div>
+
+</section>
+
+<!-- Modal for Product Details -->
+<div id="product-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">×</span>
+        <div id="modal-details"></div>
+    </div>
+
+<div id="product-modal" class="modal">
+    <div class="modal-content">
+        <!-- Close Button -->
+        <button class="close-button" onclick="closeModal()">×</button>
+<img src="https://static-00.iconduck.com/assets.00/close-icon-2048x2048-lvgazmvf.png" alt="Close">
+</div>
+</div>
+</div>
+<section id="contact" class="contact">
+               
+<h2>Contact Us</h2>
+            
+<p>
+   Address: D-211, Maruti Complex, Sagaoon, Manpada Road,<br>
+                Dombivli (E), 421 204, Thane, Maharashtra.<br>
+                Phone: <a href="tel:+919760164604">+91 9760164604</a><br>
+                Email: <a href="mailto:sstradmfg@gmail.com">sstradmfg@gmail.com</a>
+  </p>
+  </section>
+
+        
+<section id="about" class="about">
+           
+ <h2>About Us</h2>
+           
+ <p>We are a trusted manufacturer of high-quality diaphragms and gaskets for industrial applications, offering exceptional reliability and compliance with global standards.</p>
+        </section>
+    </main>
+
+    
+<footer class="footer">
+       
+ <p>&copy; 2024 SS Trading & Manufacturing. All rights reserved.</p>
+   
+ </footer>
+
+    
+<script src="amazon.js"></script>
+</body>
+</html>
